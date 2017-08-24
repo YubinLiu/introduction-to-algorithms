@@ -43,12 +43,12 @@ else
     maxSum(i, j) = max( maxSum(i + 1, j), maxSum(i + 1, j + 1) ) + triangle[i][j];
 ```
 
-根据递归式，写出的解决方案见 /code/FirstTest.java。
+根据递归式，写出的解决方案见 [code/FirstTest.java](https://github.com/YubinLiu/introduction-to-algorithms/blob/master/15_%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E4%BE%8B%E5%AD%90/code/FirstTest.java)。
 
 ##### 第二次尝试：
 第一次尝试中存在着大量的重复计算，将计算出的三角形每个点的最佳路径的数字和保存起来，之后便可直接获取而不用再计算一遍。称为“ 带备忘的自顶向下法 ”。
 
-写出的解决方案见 /code/SecondTest.java。
+写出的解决方案见 [code/SecondTest.java](https://github.com/YubinLiu/introduction-to-algorithms/blob/master/15_%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E4%BE%8B%E5%AD%90/code/SecondTest.java)。
 
 ##### 第三次尝试：
 改变递归为递推。递归需要用到大量堆栈上的空间，易造成栈溢出，所以可将其改为“ 自底向上法 ”。
@@ -87,7 +87,7 @@ else
 2 7 4 4                7  12 10 10
 4 5 2 6 5              4  5  2  6  5
 ```
-根据上述过程，写出递推型，“ 自底向上法 ”的解决方案，见 /code/ThirdTest.java。
+根据上述过程，写出递推型，“ 自底向上法 ”的解决方案，见 [code/ThirdTest.java](https://github.com/YubinLiu/introduction-to-algorithms/blob/master/15_%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E4%BE%8B%E5%AD%90/code/ThirdTest.java)。
 
 ##### 第四次尝试：
 无需用二维数组存储三角形每一个点的最佳路径的数字和的值，只需用一维数组即可，该尝试仅对于空间优化。具体步骤如下：
@@ -153,4 +153,4 @@ else
 4 5 2 6 5               30 21 10 10 5
 ```
 
-根据上述步骤写出的解决方案见 /code/FourthTest.java。
+根据上述步骤写出的解决方案见 [code/FourthTest.java](https://github.com/YubinLiu/introduction-to-algorithms/blob/master/15_%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E4%BE%8B%E5%AD%90/code/FourthTest.java)。
